@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+ <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+   
+  </head>
+
+<!-- js keyword "body" -->
+  <body>  
+    
+      
+    <!-- navbar -->
+    
+    <nav class="navbar">
+
+      <i class="bx bx-menu" id="sidebarOpen"></i>
+  
+      <div class="search_bar">
+        <input type="text" placeholder="Search" />
+      </div>
+
+      <div class="search-button">
+        <button class="btn btn-primary" type="button">
+          <i class="fas fa-search fa-sm"></i>
+      </div>
+
+      <!-- bell alert or notification -->
+       <!--problem of the line -->
+
+
+<!--font awesome icon cdn port link  -->
+
+      <div class="navbar_content"> 
+        <a href="#" class="notification">
+          <i class="fas fa-bell fa-fw"></i>
+          <span class="badge">3</span>
+        </a>
+        
+        <a href="#" class="notification">
+          <i class='far fa-comment-alt' style='font-size:20px'></i>
+          <span class="badge">3</span>
+        </a>
+        <div class="dropdown">
+          <img src="WIN_20231024_21_15_22_Pro.jpg" alt="" class="profile" />
+          <div class="dropdown-content">
+            <i class='far fa-user-circle' style='font-size:22px'> Profile</i>
+            <br><br>
+            <i class='fa fa-cog' style='font-size:22px'>Settings</i>
+            <br><br>
+            <i class='fa fa-list' style='font-size:22px'>activity log</i>
+
+           
+<!-- underline -->
+            <p class="underline"></p>
+            <style>.underline{border-bottom:1px solid black; width:200px; padding-bottom:5px;}</style>
+            <i class= "fa fa-share" style='font-size:22px'>Logout</i>
+           
+          </div>
+        </nav>
+
+    <!-- sidebar -->
+      <nav class="sidebar">
+      
+      <div class="menu_content">
+        <ul class="menu_items">
+          <div class="logo_item">
+            
+            <div class="icon">
+        <i class="fas fa-grin-beam" style="color:white"><h6><b>SB ADMIN<sup>2</sup></h6></b></span></i>
+        
+        
+       
+       
+       
+          </div>
+      
+          </div>
+          <p class="underline"></p>
+          <style>.underline{border-bottom:1px solid black; width:200px; padding-bottom:5px;}</style>
+  
+
+         <span class="navlink_icon">
+          <i class="fas fa-fw fa-tachometer-alt"></i>&nbsp <span><b><h12>Dashboard</h12></span></b>
+              </span>
+              
+
+
+            <!-- underline -->
+            <p class="underline"></p>
+            <style>.underline{border-bottom:1px solid lightcyan; width:200px; padding-bottom:5px;}</style>
+          
+          <p>INTERFACE</p>
+          <li class="item">
+            <div href="#" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="fa fa-cog"></i>
+              </span>
+              <span class="navlink">components</span>
+              <i class="bx bx-chevron-right arrow-left"></i>  
+            </div>
+
+            <ul class="menu_items submenu">
+              <a href="#" class="nav_link sublink">CUSTOM components</a>
+              <a href="#" class="nav_link sublink">Buttons</a>
+              <a href="#" class="nav_link sublink">Cards</a>
+            </ul>
+          </li>
+          <!-- end -->
+
+          <!-- duplicate this li tag if you want to add or remove  navlink with submenu -->
+          <!-- start -->
+          <li class="item">
+            <div href="#" class="nav_link submenu_item">
+              <span class="navlink_icon">
+                <i class="fa fa-tools"></i>
+              </span>
+              <span class="navlink">Utilities</span>
+              <i class="bx bx-chevron-right arrow-left"></i>
+            </div>
+
+            <ul class="menu_items submenu">
+              <a href="#" class="nav_link sublink">CUSTOM UTILITIES</a>
+              <a href="#" class="nav_link sublink">Others</a>
+              <a href="#" class="nav_link sublink">Borders</a>
+              <a href="#" class="nav_link sublink">Colors</a>
+              <a href="#" class="nav_link sublink">Animations</a>
+            </ul>
+          </li>
+          <!-- end -->
+        
+<!-- underline -->
+        <p class="underline"></p>
+<style>.underline{border-bottom:1px solid lightcyan; width:200px; padding-bottom:5px;}</style>
+
+<p>ADDONS</p>
+<!-- submenu items ku js code use pani toggle method use pani dropdown action kuduthurukom idhuvae html nahh <select> & option value use paniyae dropdown action kudukalam -->
+<li class="item">
+  <div href="#" class="nav_link submenu_item">
+    <span class="navlink_icon">
+      <i class="fas fa-book"></i>
+    </span>
+    <span class="navlink">pages</span>
+    <i class="bx bx-chevron-right arrow-left"></i>
+  </div>
+  <ul class="menu_items submenu">
+    <a href="#" class="nav_link sublink">LOGIN SCREENS</a>
+    <a href="#" class="nav_link sublink">Register</a>
+    <a href="#" class="nav_link sublink">Login</a>
+    <a href="#" class="nav_link sublink">404 page</a>
+    <a href="#" class="nav_link sublink">forgot password</a>
+  </ul>
+</li>
+&nbsp
+          <!-- End -->
+<!-- span tag used in oru line laa one word matum colors,fonts lam change pandrathuku use panikalam  -->
+          <li class="item">
+            <a href="#" class="nav_link">  
+              <span class="navlink_icon">
+                <i class="fas fa-fw fa-chart-area"></i>
+              </span>
+              <span class="navlink">Charts</span>
+            </a>
+          </li>
+          &nbsp;
+          <!-- bootstrap navlink mari ,html  la navlink use panahhma link kudukanum nahh form action="link" ipdiyum link kudukalam -->
+          <li class="item">
+            <a href="table box.html" class="nav_link">
+              <!-- navlink icon ku changes lam pannaum so span tag use pani separate pandrom -->
+              <span class="navlink_icon">
+                <i class="fa fa-table"></i>
+              </span>
+            
+              <span class="navlink">Tables</span>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Sidebar Open / Close -->
+        <div class="bottom_content">
+          <div class="bottom expand_sidebar">
+            <i class='bx bx-log-in' ></i>
+          </div>
+
+          <!-- javascript keyowrd or argument collapse ndrae word hu  -->
+          <div class="bottom collapse_sidebar">
+            <i class='bx bx-log-out'></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    
+
+
+
+
+<!-- copy code  -->
+
+
+<div class="container-fluid">
+<br><br>
+  <!-- Page Heading -->
+  <div class="d-sm-flex align-items-center justify-content-between mb-4">
+      <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+      <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+  </div>
+  
+                    <!-- Content Row -->
+                    <div class="row">
+
+
+
+      <!-- Earnings (Monthly) Card Example -->
+      <div class=" col-xl-3  col-md-6 mb-4"> 
+          <div class="card border-left-primary shadow h-100 py-2">
+              <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                          <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
+                              Earnings (Monthly)</div>
+                          <div class="h5 mb-0 font-weight-bold text-gray-800">$40,000</div>
+                      </div>
+                      <div class="col-auto">
+                          <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <!-- Earnings (Monthly) Card Example -->
+      <div class="col-xl-3  col-md-6 mb-4">
+          <div class="card border-left-success shadow h-100 py-2">
+              <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                          <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
+                              Earnings (Annual)</div>
+                          <div class="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
+                      </div>
+                      <div class="col-auto">
+                          <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+    
+      <!-- Pending Requests Card Example -->
+      <div class="col-xl-3  col-md-6 mb-4">
+          <div class="card border-left-warning shadow h-100 py-2">
+              <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                      <div class="col mr-2">
+                          <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
+                              Pending Requests</div>
+                          <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                      </div>
+                      <div class="col-auto">
+                          <i class="fas fa-comments fa-2x text-gray-300"></i>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+                  <div class="col-lg-6  mb-2">
+                    
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Projects</h6>
+                        </div>
+                  <div class="card-body">
+                    <h4 class="small font-weight-bold">Server Migration <span class="float-right">20%</span></h4>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h4 class="small font-weight-bold">Sales Tracking <span class="float-right">40%</span></h4>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h4 class="small font-weight-bold">Customer Database <span class="float-right">60%</span></h4>
+                    <div class="progress mb-4">
+                        <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h4 class="small font-weight-bold">Payout Details <span class="float-right">80%</span></h4>
+                    <div class="progress mb-4">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h4 class="small font-weight-bold">Account Setup <span class="float-right">Complete!</span></h4>
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    
+                    <br><br>
+
+                    <div class="row">
+                      <div class="col-lg-3-sm"></div>
+                    
+                      <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <div class="card bg-primary text-white shadow">
+                                <div class="card-body">
+                                    Primary
+                                    <div class="text-white-50 small">#4e73df</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="card bg-success text-white shadow">
+                                <div class="card-body">
+                                    Success
+                                    <div class="text-white-50 small">#1cc88a</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="card bg-info text-white shadow">
+                                <div class="card-body">
+                                    Info
+                                    <div class="text-white-50 small">#36b9cc</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="card bg-warning text-white shadow">
+                                <div class="card-body">
+                                    Warning
+                                    <div class="text-white-50 small">#f6c23e</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="card bg-danger text-white shadow">
+                                <div class="card-body">
+                                    Danger
+                                    <div class="text-white-50 small">#e74a3b</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="card bg-secondary text-white shadow">
+                                <div class="card-body">
+                                    Secondary
+                                    <div class="text-white-50 small">#858796</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="card bg-light text-black shadow">
+                                <div class="card-body">
+                                    Light
+                                    <div class="text-black-50 small">#f8f9fc</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <div class="card bg-dark text-white shadow">
+                                <div class="card-body">
+                                    Dark
+                                    <div class="text-white-50 small">#5a5c69</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> 
+</html>
+              </body>
+                                     
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                        
